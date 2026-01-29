@@ -1,5 +1,53 @@
 # 🎵 Playlist Manager: Clean Code & Architecture
 
+This project was developed as part of my career transition into software development. It is a terminal-based (prompt) playlist management system focused on the practical application of **Clean Code**, **Software Architecture**, and **Python** best practices.
+
+## 🧠 Clean Code Concepts Learned
+
+During development, I prioritized writing code that is readable, testable, and easy to maintain. The key pillars applied were:
+
+* **Single Responsibility Principle (SRP):** Each class and method has one clear task, delegating only a single responsibility to each element.
+* **Atomic Commits:** The Git history was built as an organizational tool, where each commit represents a small, independent logical change.
+* **Type Hinting:** Using type annotations to make the code self-documenting, making it easier to understand which data is expected and returned.
+* **Exception Handling:** Implementation of `try/except` blocks to manage failures gracefully and ensure the system does not crash abruptly.
+
+## 🏗️ Architecture and Folder Structure (MVC + Constructor)
+
+The main highlight of this project is its structural organization. The system was divided following the **MVC** pattern, with the addition of a **Constructor** layer to manage dependencies:
+
+* **Model:** Data representation (entities) and database actions, such as search and insertion (repositories).
+* **View:** Responsible for direct user interaction (inputs and outputs).
+* **Controller:** Where the business rules reside; it processes the information collected from the View.
+* **Constructor:** The layer that "groups" responsibilities, instantiating classes and connecting View and Controller.
+
+### 🔗 File Correlation
+To maintain clarity and ease of maintenance, I used a correlated naming strategy. Files belonging to the same functionality have similar names across different folders, such as:
+- `song_register_view.py` (in the View folder)
+- `song_register_controller.py` (in the Controller folder)
+- `song_register_constructor.py` (in the Constructor folder)
+
+This allows for intuitive navigation through the project, where it is possible to track the flow of information just by the file name.
+
+## 🛠️ Tech Stack & Environment
+
+* **Python 3**
+* **Git** (Professional versioning and workflow)
+* **Linux Environment (Ubuntu)**
+* **VS Code** (Productivity settings and customized `settings.json`)
+
+---
+
+### 🚀 How to run the project
+
+1. Clone the repository.
+2. In the terminal, run the system's entry point:
+   ```bash
+   python3 run.py
+
+
+
+# 🎵 Playlist Manager: Clean Code & Architecture
+
 Este projeto foi desenvolvido como parte do meu processo de transição de carreira para o desenvolvimento de software. Trata-se de um sistema de gerenciamento de playlists via terminal (prompt), focado na aplicação prática de **Clean Code**, **Arquitetura de Software** e boas práticas com **Python**.
 
 ## 🧠 Conceitos de Clean Code Aprendidos
